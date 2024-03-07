@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="index.js"></script>
+    <title>Courier Managemenet APP</title>
+</head>
+
+<body>
+    <header>
+        <h1>Courier Managemenet APP</h1>
+    </header>
+
+    <div id="root"></div>
+
+    <main>
+        <!-- Courier List -->
+        <section id="courier-list">
+            <h2>Courier List</h2>
+            <ul id="couriers">
+                <!-- Courier items will be dynamically added here using JavaScript -->
+            </ul>
+        </section>
+
+        <!-- Courier Management Section -->
+        <section id="courier-management">
+            <h2>Courier Management</h2>
+
+            <!-- Add Courier Form -->
+            <div id="add-courier-form">
+                <h3>Add Courier</h3>
+                <form id="addCourierForm">
+                    <!-- Form fields for adding a courier -->
+                    <label for="courierName">Full Name:</label>
+                    <input type="text" id="courierName" required>
+
+                    <label for="regionSelect">Select Region:</label>
+                    <select id="regionSelect" required>
+                        <!-- Options will be dynamically added here using JavaScript -->
+                    </select>
+
+                    <br></br>
+                    <!-- Add more form fields as needed -->
+
+                    <button type="submit" id="addCourierBtn">Add Courier</button>
+                </form>
+            </div>
+
+            <!-- Update Courier Form -->
+            <div id="update-courier-form" style="display: none;">
+                <h3>Update Courier</h3>
+                <form id="updateCourierForm">
+                    <!-- Form fields for updating a courier -->
+                    <label for="updateCourierID">Courier ID:</label>
+                    <p id="updateCourierID" contenteditable="false"></p>
+
+                    <label for="updateCourierName">Full Name:</label>
+                    <input type="text" id="updateCourierName" required>
+
+                    <label for="updateRegionSelect">Select Region:</label>
+                    <select id="updateRegionSelect" required>
+                        <!-- Options will be dynamically added here using JavaScript -->
+                    </select>
+
+                    <label for="updateDeliveryCheckboxList">Deliveries:</label>
+                    <div id="updateDeliveryCheckboxList">
+                        <!-- Skills with checkboxes will be dynamically added here using JavaScript -->
+                    </div>
+
+                    <br></br>
+                    <!-- Add more form fields as needed -->
+
+                    <button type="submit" id="saveUpdateCourierBtn">Save</button>
+                </form>
+            </div>
+        </section>
+
+
+
+        <!-- Regions List -->
+        <section id="regions-list">
+            <h2>Regions List</h2>
+            <ul id="regions">
+                <!-- Regions will be dynamically added here using JavaScript -->
+            </ul>
+        </section>
+
+        <!-- Add Region Form -->
+        <section id="add-region">
+            <h2>Add Region</h2>
+            <form id="addRegionForm">
+                <!-- Form fields for adding a region -->
+                <label for="regionName">Region Name:</label>
+                <input type="text" id="regionName" required>
+
+                <!-- Add more form fields as needed -->
+
+                <button type="submit">Add Region</button>
+            </form>
+        </section>
+
+        <!-- Deliverys List -->
+        <section id="deliverys-list">
+            <h2>Deliveries List</h2>
+            <ul id="deliverys">
+                <!-- Deliverys will be dynamically added here using JavaScript -->
+            </ul>
+        </section>
+
+
+        <!-- Delivery Management Section -->
+        <section id="delivery-management">
+            <h2>Delivery Management</h2>
+
+            <!-- Add Delivery Form -->
+            <div id="add-delivery-form">
+                <h2>Add Delivery</h2>
+                <form id="addDeliveryForm">
+                    <!-- Form fields for managing deliverys -->
+                    <label for="deliveryAddress">Delivery Address:</label>
+                    <input type="text" id="deliveryAddress" required>
+
+                    <label for="deliveryRegionSelect">Select Region:</label>
+                    <select id="deliveryRegionSelect" required>
+                        <!-- Options will be dynamically added here using JavaScript -->
+                    </select>
+
+                    <label for="deliveryAmount">Delivery Amount:</label>
+                    <input type="number" id="deliveryAmount" required>
+
+                    <label for="deliveryDescription">Delivery Description:</label>
+                    <input type="text" id="deliveryDescription" required>
+
+                    <!-- Add more form fields as needed -->
+                    
+                    <br></br>
+
+                    <button type="submit" id="manageDeliverysBtn">Manage Deliverys</button>
+                </form>
+            </div>
+
+            <!-- Update Delivery Form -->
+            <div id="update-delivery-form" style="display: none;">
+                <h2>Update Delivery</h2>
+                <form id="updateDeliveryForm">
+                    <!-- Form fields for managing deliverys -->
+
+                    <label for="updateInerviewID">Delivery ID:</label>
+                    <p id="updateInerviewID" contenteditable="false"></p>
+
+                    <label for="updateCandidateName">Candidate Name:</label>
+                    <input type="text" id="updateCandidateName" required>
+
+                    <label for="updateDeliveryTime">Delivery Time:</label>
+                    <input type="time" id="updateDeliveryTime" required>
+
+                    <label for="updateRegionsDeliveryCheckboxList">Delivery Regions:</label>
+                    <div id="updateRegionsDeliveryCheckboxList">
+                        <!-- Regions with checkboxes will be dynamically added here using JavaScript -->
+                    </div>
+
+                    <!-- Courier Dropdown -->
+                    <label for="updateCourierSelect">Select Courier:</label>
+                    <select id="updateCourierSelect" required>
+                        <!-- Options will be dynamically added here using JavaScript -->
+                    </select>
+
+                    <!-- Add more form fields as needed -->
+
+                    <button type="submit" id="updateDeliverysBtn">Save</button>
+                </form>
+            </div>
+        </section>
+        <!-- Manage Deliverys Form -->
+        <section id="add-delivery">
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

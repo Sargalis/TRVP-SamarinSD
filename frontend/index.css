@@ -1,0 +1,124 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+footer {
+  margin: 20px;
+}
+
+header h1,
+footer p {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section {
+  width: 48%; /* Adjust the width as needed */
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+button {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  background-color: #ffbd71;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fd8f52;
+}
+
+/* courier */
+.courier {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.courier p {
+  margin: 0;
+}
+
+.courier h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.courier ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.courier li {
+  margin-bottom: 5px;
+}
+
+/* Add this CSS to your stylesheet or in a <style> tag in your HTML */
+
+.delivery {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.delivery h2 {
+  color: #333;
+}
+
+.delivery p {
+  margin: 5px 0;
+}
+
+.delivery ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.delivery li {
+  margin: 5px 0;
+}
+
+.delivery button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delivery button:hover {
+  background-color: #c82333;
+}
